@@ -7,7 +7,13 @@ var textBlock = $(".col-8");
 var plannerTask = $("textarea");
 $.each(plannerTask, function () {
     this.value = "";
-});
+}); 
+
+// DATE 
+$("#currentDay").text(`${currentTime.format('dddd, MMMM Do')}`);
+
+
+
 
 
 // SETTING UP LOCAL STORAGE 
